@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+/* Variáveis do site */
+:root{
+    --cor-primaria: #2C3639;
+    --cor-secundaria: #DCD7C9;
+    --cor-tercearia: #A27B5C;
+    --cor-hover: #3D4E4F;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+*
+{
+    margin: 0; /*Remover margem da página*/
+    padding: 0; /*Remover espaçamento da página*/
+}
+
+body 
+{
+    box-sizing: border-box; /*Definir a area de trabalho da pagina*/
+    background-color: var(--cor-primaria); /*Definir a cor do fundo da pagina*/
+    color: var(--cor-secundaria); /*Definir a cor da letra da pagina*/
+}
+
+.cabecalho
+{
+    padding: 2% 0% 0% 15%; /*Definir os espaçaentos do cabeçalho da pagina*/
+}
+
+.cabecalho__menu
+{
+    display: flex; /*Definir a organização do cabeçalho da pagina*/
+    gap: 80px; /*Definir a distancia entre os elementos do cabeçalho da pagina*/
+}
+
+.cabecalho__menu__links
+{
+    font-weight: 600; /*Definir a espessura da letra do cabeçalho*/
+    font-size: 1rem; /*Definir o tamanho da letra do cabeçalho*/
+    font-family: var(--fonte-secundaria); /*Definir a cor da letra do cabeçalho*/
+    text-decoration: none; /*Remover a sublinhado de hiperlinks*/
+    color: var(--cor-secundaria); /*Definir a cor da letra do cabeçalho*/
+}
+
+.Apresentacao
+{
+    padding: 3% 15%; /*Definir o espaçamento do texto*/
+    display: flex; /*Definir a organização do texto*/
+    align-items: center; /*Definir o alinhamento do texto como central*/
+    justify-content: space-between; /*Definir a espaçemento entre os conteudos do texto*/
+    gap: 82px; /*Definir a espaçemento entre os conteudos do texto e imagem*/
+}
+
+.Apresentacao__conteudo
+{
+    width: 50%; /*Definir a largura do conteudo em % do tamanho da pagina*/
+    display: flex; /*Definir a organização do conteudo*/
+    flex-direction: column; /*Definir a organização do conteudo como colunas*/
+    gap: 40px; /*Definir o espaçamento do conteudo*/
+}
+
+.Apresentacao__conteudo__titulo
+{
+    font-size: 1.5rem; /*Definir o tamanho do Titulo*/
+    font-family: var(--fonte-primaria) /*Definir a fonte do Titulo*/
+}
+
+.DestaqueTitulo 
+{
+    color: var(--cor-tercearia); /*Definir a cor em destaque da letra do Titulo*/
+}
+
+.Apresentacao__conteudo__texto
+{
+    font-size: 1rem; /*Definir o tamanho do texto*/
+    font-weight: 400; /*Definir a espessura do texto*/
+    font-family: var(--fonte-secundaria) /*Definir a fonte do texto*/
+}
+
+.Habilidades
+{
+    color: var(--cor-tercearia); /*Definir a cor em destaque das habilidades do texto*/
+}
+
+.Apresentacao__conteudo__links
+{
+    display: flex; /*Definir a organização dos links*/
+    flex-direction: column; /*Definir a organização dos links como colunas*/
+    align-items: center; /*Definir o alinhamento dos links como central*/
+    gap: 30px; /*Definir o espaçamento dos links*/
+}
+
+.Apresentacao__conteudo__links__titulo
+{
+    font-size: 1rem; /*Definir o tamanho do texto dos links*/
+    font-weight: 400; /*Definir a espessura do texto dos links*/
+    font-family: var(--fonte-primaria); /*Definir a fonte do texto dos links*/
+}
+
+.Apresentacao__conteudo__links__botao
+{
+    border: 2px solid var(--cor-tercearia); /*Definir a borda e a cor dos botoes de links*/
+    width: 60%; /*Definir a largura dos botoes de links*/
+    text-align: center; /*Definir o alinhamento do texto dos botoes de links como central*/
+    border-radius: 8px; /*Definir o arredondamento dos botoes de links*/
+    font-size: 1rem; /*Definir o tamanho do texto dos botoes de links*/
+    font-weight: 600; /*Definir a espessura do texto dos botoes de links*/
+    padding: 10px 0px; /*Definir o espaçamento dos botoes de links até a borda*/
+    text-decoration: none; /*Remover a sublinhado de hiperlinks dos botoes*/
+    color: var(--cor-secundaria); /*Definir a cor do texto dos botoes de links*/
+    font-family: var(--fonte-secundaria); /*Definir a fonte do texto dos botoes de links*/
+    display: flex; /*Definir a organização dos botoes de links*/
+    justify-content: center; /*Definir a alinhamento do conteudo dos botoes dos links com central vertical*/
+    align-items: center; /*Definir a alinhamento do conteudo dos botoes dos links com centro na horizontal */
+    gap: 16px; /*Definir o espaçamento dos botoes dos links*/
+}
+
+.Apresentacao__conteudo__links__botao:hover
+{
+    background-color: var(--cor-hover); /*Definir a cor dos botoes dos links quando clicados*/
+}
+
+.Apresentacao__imagem
+{
+    width: 50%; /*Definir a largura da imagem da pagina*/
+}
+
+.rodape
+{
+    background-color: var(--cor-tercearia); /*Definir a cor do rodape*/
+    color: var(--cor-hover); /*Definir a cor do texto do rodape*/
+    padding: 24px; /*Definir o tamanho do rodape*/
+    text-align: center; /*Definir o alinhamento do texto do rodape*/
+    font-family: var(--fonte-secundaria); /*Definir a fonte do texto do rodape*/
+    font-weight: 400; /*Definir a espessura do texto do rodape*/
+    font-size: 1rem; /*Definir o tamanho do texto do rodape*/
+}
+
+@media (max-width: 1250px)
+{
+    .cabecalho
+    {
+        padding: 10%; /*Definir os espaçaentos do cabeçalho da pagina para dispositivos mobile*/
+    }
+    
+    .cabecalho__menu
+    {
+        justify-content: center; /*Definir o alinhamento do cabeçalho da pagina para dispositivos mobile*/
+    }
+
+    .Apresentacao
+    {
+        flex-direction: column-reverse;
+        padding: 2% 5%; /*Definir o espaçamento do texto para dispositivos mobile*/
+    }
+    
+    .Apresentacao__conteudo
+    {
+        width: auto; /*Definir a largura do conteudo em % do tamanho da pagina para dispositivo mobile*/
+    }
+}
